@@ -1,9 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "serve out"
+    "build-pages": "npx next-on-pages",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@types/node": "^18.11.5",
